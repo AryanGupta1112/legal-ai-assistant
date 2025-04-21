@@ -1,0 +1,9 @@
+# Ignore dependencies
+node_modules/
+.cache/
+backend/.cache/
+backend/node_modules/
+frontend/node_modules/
+uploads/
+*.log
+.env

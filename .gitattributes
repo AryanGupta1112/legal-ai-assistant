@@ -1,0 +1,2 @@
+backend/node_modules/@xenova/transformers/.cache/Xenova/**/*.onnx filter=lfs diff=lfs merge=lfs -text
+backend/node_modules/@xenova/transformers/.cache/Xenova/distilbart-cnn-12-6/onnx/decoder_model_merged_quantized.onnx filter=lfs diff=lfs merge=lfs -text
