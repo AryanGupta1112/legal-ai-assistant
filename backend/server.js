@@ -17,8 +17,9 @@ const app = express();
 
 // ✅ Middleware
 app.use(express.json());
-app.use(cors({ origin: "https://your-vercel-url.vercel.app" }));
-
+app.use(cors({
+  origin: ["https://https://legal-ai-assistant-rho.vercel.app", "http://localhost:3000"]
+}));
 // ✅ Ensure uploads directory exists
 const uploadsDir = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadsDir)) {
