@@ -46,7 +46,7 @@ function App() {
     if (!inputText.trim()) return alert("Enter some legal text!");
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/analyze", { text: inputText });
+      const res = await axios.post("${process.env.REACT_APP_API_BASE_URL}/analyze", { text: inputText });
       setResult(res.data.summary);
       setClauses(res.data.clauses);
     } catch (error) {
@@ -60,7 +60,7 @@ function App() {
     if (!inputText.trim()) return alert("Enter some legal text!");
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/analyze-risk", { text: inputText });
+      const res = await axios.post("${process.env.REACT_APP_API_BASE_URL}/analyze-risk", { text: inputText });
       setRiskAnalysis(res.data.riskAnalysis);
     } catch (error) {
       console.error("❌ Error analyzing risk:", error);
@@ -73,7 +73,7 @@ function App() {
     if (!inputText.trim()) return alert("Enter text to translate!");
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/translate", {
+      const res = await axios.post("${process.env.REACT_APP_API_BASE_URL}/translate", {
         text: inputText,
         sourceLang,
         targetLang,
@@ -93,7 +93,7 @@ function App() {
 
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/upload-pdf", formData, {
+      const res = await axios.post("${process.env.REACT_APP_API_BASE_URL}/upload-pdf", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setInputText(res.data.text);
