@@ -2,7 +2,7 @@
 
 An open-source, AI-powered tool to **analyze**, **summarize**, **detect risks**, and **translate** legal documents and contracts. Built using React, Node.js, and HuggingFace Transformers.
 
-![Legal AI Assistant Screenshot](image.png)
+![Legal AI Assistant Screenshot](image-1.png)
 
 ---
 
