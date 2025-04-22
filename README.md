@@ -53,6 +53,11 @@ If this project helped you, show some love by giving it a ⭐ on GitHub and shar
 
 ---
 
+## ⚠️ Disclaimer
+This project is intended for educational and demonstrational purposes only. It does not constitute legal advice and should not be relied upon for any legal decisions. Always consult with a qualified legal professional before taking any action based on the output of this tool.
+
+---
+
 
 
  

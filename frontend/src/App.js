@@ -247,6 +247,14 @@ function App() {
           </Box>
           
           )}
+
+<Box sx={{ mt: 4, textAlign: "center", fontSize: 12, opacity: 0.7, color: darkMode ? "#ccc" : "#555"
+ }}>
+  <Typography variant="body2">
+    ⚠️ Disclaimer: This tool is for educational and demonstrational purposes only. It does not constitute legal advice. Please consult a qualified legal professional before making legal decisions.
+  </Typography>
+</Box>
+
         </Paper>
       </Container>
     </ThemeProvider>
